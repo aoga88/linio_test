@@ -32,7 +32,7 @@ class LinioCommand extends Command {
         $end = 100;
 
         for ($i = $start; $i <= $end; $i++) {
-            $output->writeln($i . ' = ' . ModValidator::validate($i));
+            $output->writeln(ModValidator::validate($i));
         }
     }
 
